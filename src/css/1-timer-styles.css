@@ -1,0 +1,127 @@
+@import 'flatpickr/dist/flatpickr.min.css';
+@import 'izitoast/dist/css/iziToast.min.css';
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+#datetime-picker {
+  margin-left: 156px;
+  margin-top: 44px;
+  outline: transparent;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 206px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-left: 16px;
+  transition: border linear 250ms;
+}
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+#datetime-picker:focus {
+  border: 1px solid #4e75ff;
+}
+#datetime-picker :disabled {
+  border: 1px solid #808080;
+  background-color: #fafafa;
+}
+.btn-start {
+  margin-left: 8px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color linear 250ms;
+}
+.btn-start:hover {
+  background-color: #6c8cff;
+}
+.btn-start:disabled {
+  background-color: #cfcfcf;
+}
+.timer {
+  margin-top: 40px;
+  margin-left: 156px;
+  width: 346px;
+  height: 72px;
+  display: flex;
+  column-gap: 24px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  align-items: center;
+}
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+.flatpickr-calendar {
+  background-color: #f5f5f5;
+  color: #666;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+.flatpickr-current-month input.cur-year {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+
+span.flatpickr-weekday {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2e2f42;
+}
+.today {
+  background-color: #c1c1c1;
+  border: none;
+}
+.flatpickr-day:hover {
+  background: transparent;
+  border: 1px solid #4e75ff;
+}
+.flatpickr-day.selected {
+  background-color: #4e75ff;
+}
+.flatpickr-time input {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+.flatpickr-time input.flatpickr-minute {
+  font-weight: 600;
+}

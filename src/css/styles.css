@@ -16,3 +16,22 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.main-link {
+  margin: 0 auto;
+  font-size: 25px;
+  padding: 30px;
+}
+.main-link:hover,
+.main-link:focus {
+  color: rgb(0, 213, 255);
+}
+.container {
+  width: 408px;
+  height: 296px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
