@@ -51,7 +51,7 @@ const timer = {
       if (userSelectedDate < today) {
         iziToast.error({
           close: false,
-          iconUrl: '/Group.png',
+          iconUrl: '../img/Group.png',
           messageColor: '#fff',
           backgroundColor: '#ef4040',
           position: 'topRight',
@@ -88,6 +88,7 @@ const timer = {
   stop() {
     clearInterval(this.intervalId);
   },
+  // correcting the length of the values
   padStart(value) {
     return String(value).padStart(2, '0');
   },

@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
   font-size: 25px;
   padding: 30px;
+  text-decoration: none;
+}
+.main-link:visited {
+  color: #3f4347;
 }
 .main-link:hover,
 .main-link:focus {
