@@ -51,13 +51,13 @@ const timer = {
 
       if (userSelectedDate < today) {
         iziToast.error({
-          close: false,
-          icon: false,
+          close: true,
           iconUrl: icon,
           messageColor: '#fff',
           backgroundColor: '#ef4040',
           position: 'topRight',
           message: ' Please choose a date in the future',
+          timeout: 10000,
         });
         refs.startBTN.disabled = true;
       } else {
