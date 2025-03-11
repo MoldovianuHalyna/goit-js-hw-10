@@ -1,0 +1,10 @@
+@import 'izitoast/dist/css/iziToast.min.css';
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.form {
+  width: 360px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+}

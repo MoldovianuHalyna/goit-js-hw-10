@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
 import iziToast from 'izitoast';
+import icon from '../img/icon.svg';
 const refs = {
   startBTN: document.querySelector('button'),
   input: document.getElementById('datetime-picker'),
@@ -51,11 +52,12 @@ const timer = {
       if (userSelectedDate < today) {
         iziToast.error({
           close: false,
-          iconUrl: '../img/Group.png',
+          icon: false,
+          iconUrl: icon,
           messageColor: '#fff',
           backgroundColor: '#ef4040',
           position: 'topRight',
-          message: 'Please choose a date in the future',
+          message: ' Please choose a date in the future',
         });
         refs.startBTN.disabled = true;
       } else {
