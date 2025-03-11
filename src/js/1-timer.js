@@ -36,8 +36,6 @@ function convertMs(ms) {
 ///setting the calendar on the input
 let userSelectedDate;
 
-const today = new Date();
-
 const timer = {
   options: {
     enableTime: true,
@@ -45,6 +43,7 @@ const timer = {
     defaultDate: new Date(),
     minuteIncrement: 1,
     onClose(selectedDates) {
+      const today = new Date();
       userSelectedDate = selectedDates[0];
 
       console.log(userSelectedDate);
@@ -60,14 +59,19 @@ const timer = {
           timeout: 10000,
         });
         refs.startBTN.disabled = true;
+        refs.input.disabled = false;
       } else {
         refs.startBTN.disabled = false;
+        refs.input.disabled = false;
       }
     },
   },
   // setTimer function
   timerStart() {
     if (!userSelectedDate) return;
+
+    refs.startBTN.disabled = true;
+    refs.input.disabled = true;
 
     this.intervalId = setInterval(() => {
       const diff = userSelectedDate - Date.now();

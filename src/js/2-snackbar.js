@@ -35,13 +35,13 @@ const handleFormSubmit = function (e) {
         messageColor: '#fff',
         backgroundColor: '#59a10d',
         position: 'topRight',
-        message: `Fulfilled promise in ${delay * 1000}ms`,
+        message: `Fulfilled promise in ${delay}ms`,
         timeout: 10000,
       });
     })
     .catch(rejectedDelay => {
       iziToast.error({
-        message: ` Rejected promise in ${delay * 1000}ms`,
+        message: ` Rejected promise in ${delay}ms`,
         close: false,
         iconUrl: icon,
         messageColor: '#fff',
