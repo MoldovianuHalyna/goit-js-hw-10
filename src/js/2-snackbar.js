@@ -4,7 +4,7 @@ import iconSuccess from '../img/icon-succes.svg';
 
 const refs = {
   form: document.querySelector('.form'),
-  delayInput: document.querySelector('.user-input'),
+  delayInput: document.querySelector('input[name="delay"]'),
   stateRadioBtns: document.querySelectorAll('input[name="state"]'),
 };
 

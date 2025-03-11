@@ -2,7 +2,7 @@ import flatpickr from 'flatpickr';
 import iziToast from 'izitoast';
 import icon from '../img/icon.svg';
 const refs = {
-  startBTN: document.querySelector('button'),
+  startBTN: document.querySelector('button[data-start]'),
   input: document.getElementById('datetime-picker'),
   days: document.querySelector('[data-days]'),
   hours: document.querySelector('[data-hours]'),
@@ -12,6 +12,7 @@ const refs = {
 
 // adding styles
 refs.startBTN.classList.add('btn-start');
+refs.startBTN.disabled = true;
 
 // function converter of milisesonds
 function convertMs(ms) {
@@ -62,7 +63,6 @@ const timer = {
         refs.input.disabled = false;
       } else {
         refs.startBTN.disabled = false;
-        refs.input.disabled = false;
       }
     },
   },
@@ -93,6 +93,13 @@ const timer = {
   // stop the timer
   stop() {
     clearInterval(this.intervalId);
+    refs.startBTN.disabled = false;
+    refs.input.disabled = false;
+    refs.input.value = '';
+    refs.days.textContent = '00';
+    refs.hours.textContent = '00';
+    refs.minutes.textContent = '00';
+    refs.seconds.textContent = '00';
   },
   // correcting the length of the values
   padStart(value) {
