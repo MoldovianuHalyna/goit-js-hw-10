@@ -51,7 +51,7 @@ const timer = {
       if (userSelectedDate < today) {
         iziToast.error({
           close: false,
-          iconUrl: '/img/Group.png',
+          iconUrl: '/Group.png',
           messageColor: '#fff',
           backgroundColor: '#ef4040',
           position: 'topRight',
