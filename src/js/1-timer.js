@@ -53,7 +53,7 @@ const timer = {
         iziToast.error({
           close: false,
           icon: false,
-          // iconUrl: icon,
+          iconUrl: icon,
           messageColor: '#fff',
           backgroundColor: '#ef4040',
           position: 'topRight',
