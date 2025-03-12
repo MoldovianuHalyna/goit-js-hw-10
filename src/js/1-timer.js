@@ -93,7 +93,7 @@ const timer = {
   // stop the timer
   stop() {
     clearInterval(this.intervalId);
-    refs.startBTN.disabled = false;
+    refs.startBTN.disabled = true;
     refs.input.disabled = false;
     refs.input.value = '';
     refs.days.textContent = '00';
