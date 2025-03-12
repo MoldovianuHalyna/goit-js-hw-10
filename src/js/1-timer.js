@@ -84,10 +84,10 @@ const timer = {
 
       let { days, hours, minutes, seconds } = convertMs(diff);
 
-      refs.days.textContent = this.padStart(days);
-      refs.hours.textContent = this.padStart(hours);
-      refs.minutes.textContent = this.padStart(minutes);
-      refs.seconds.textContent = this.padStart(seconds);
+      refs.days.textContent = this.pad(days);
+      refs.hours.textContent = this.pad(hours);
+      refs.minutes.textContent = this.pad(minutes);
+      refs.seconds.textContent = this.pad(seconds);
     }, 1000);
   },
   // stop the timer
@@ -102,7 +102,7 @@ const timer = {
     refs.seconds.textContent = '00';
   },
   // correcting the length of the values
-  padStart(value) {
+  pad(value) {
     return String(value).padStart(2, '0');
   },
 };
